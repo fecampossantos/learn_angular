@@ -1,0 +1,11 @@
+<h1> Characters </h1>
+
+<ul *ngIf="chars">
+<li *ngFor="let char of chars">
+  <img src="{{ char.image }}" alt="{{ char.name }}">
+  <p class="name"> {{ char.name }}</p>
+  <p class="gender"> <strong>Gender:</strong> {{ char.gender }}</p>
+  <p class="status"> <strong>Status:</strong> {{ char.status }}</p>
+  <p class="species"> <strong>Species:</strong> {{ char.species }}</p>
+</li>
+</ul>
